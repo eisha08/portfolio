@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    color: rgb(var(--foreground-rgb));
+    background-color: #0d1224;
+    background-image: 
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px), /* Vertical lines */
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); /* Horizontal lines */
+  background-size: 40px 40px; /* Adjust the size of the grid cells */
 }
+  
+  
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
