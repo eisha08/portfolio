@@ -4,7 +4,7 @@ import { MdOutlineWbSunny } from "react-icons/md";
 import { FaRegMoon } from "react-icons/fa";
 function Navbar() {
   return (
-    <div className="navbar bg-transparent">
+    <div className="navbar bg-transparent ">
         <div className="flex flex-row justify-around items-center">
             <div className="left flex flex-row ">
                <div className="logo pt-4 ">

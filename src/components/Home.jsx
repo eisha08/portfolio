@@ -7,6 +7,7 @@ import { CiMail } from 'react-icons/ci';
 import { IoMdDownload } from 'react-icons/io';
 
 
+
 function Home() {
   // variants.js
 // const fadeIn = () => ({
@@ -64,7 +65,7 @@ const fadeIn = () => {
         <div className="button-div flex flex-row justify-center p-4 gap-4">
           <div className="btn1 flex flex-row gap-2 border-2 border-white rounded-3xl bg-pink-500 p-3 hover:bg-blue-400">
             <div className="btn">
-              <button>Contact Me</button>
+              <a href="#form-page"><button>Contact Me</button></a>
             </div>
             <div className="icon">
               <CiMail size={24} />
