@@ -10,7 +10,7 @@ function Navbar() {
                <div className="logo pt-4 ">
                <FaCode size={24} color="white"/>
                </div>
-               <div className="logoName p-3 font-opensans text-2xl text-white">
+               <div className="logoName p-3 font-opensans text-2xl text-white font-bold">
                 eishacodes
                </div>
               
