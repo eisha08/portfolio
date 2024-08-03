@@ -30,7 +30,7 @@ function About() {
         animate="show"
         viewport={{ once: false, amount: 0.3 }}
     >
-      <div className="text-pink-300 text-3xl font-semibold py-14 text-start px-12">
+      <div className="text-pink-300 text-4xl font-semibold py-14 text-start px-12">
          About me
       </div>
       <div className="flex flex-row justify-around">
