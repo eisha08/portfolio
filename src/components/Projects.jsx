@@ -10,7 +10,7 @@ import todo from '../assets/todo.png';
 import blog from '../assets/blog.png';
 import musica from '../assets/musica.png';
 
-function Projects() {
+function Projects({theme}) {
   const projects = [
     {
       image: blog,
@@ -43,7 +43,7 @@ function Projects() {
 
   return (
     <div id='project' className="">
-        <div className=" text-center font-bold text-4xl text-pink-300 py-10">
+        <div className={` text-left pl-10 font-bold text-4xl ${theme === 'dark' ? 'text-pink-300' : 'text-purple-700'}  py-10`}>
             My Work
         </div>
     

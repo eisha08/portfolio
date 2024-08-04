@@ -30,15 +30,15 @@ const skills = [
   { name: 'EJS', img: javascript },
 ];
 
-function App() {
+function App({theme}) {
   return (
     <div id='skills' className="skills-section">
         <div className="div flex flex-row ">
-        <div className="text-pink-300 text-4xl font-semibold py-14 text-start pl-8">
+        <div className={` ${theme==='dark'?'text-pink-300':'text-purple-700'} text-4xl font-semibold py-14 text-start pl-8`}>
         Skills
         </div>
         <div className="div py-14 px-2">
-            <FaRegFileCode size={36} color="pink "/>
+            <FaRegFileCode size={36} color={theme === 'dark' ? 'white' : 'purple'}/>
         </div>
         </div>
         
