@@ -35,7 +35,7 @@ function About({ theme }) {
   const operatorColor = theme === 'dark' ? 'text-amber-300' : 'text-indigo-600';
 
   return (
-    <div className={`about h-[100vh] pt-24 `} ref={ref}>
+    <div  className={`about min-h-screen pt-24`} ref={ref} id="about">
       <motion.div
         className="div"
         variants={fadeIn()}
@@ -46,24 +46,22 @@ function About({ theme }) {
         <div className={`text-4xl font-semibold py-14 text-left pl-10 ${textColor}`}>
           About me
         </div>
-        <div className="flex flex-row justify-around">
-          <div>
-            <img className="h-[500px] w-[500px]" src={code} alt="" />
+        <div className="flex flex-col md:flex-row justify-around items-center">
+          <div className="mb-10 md:mb-0">
+            <img className="h-80 w-80 md:h-[500px] md:w-[500px]" src={code} alt="code illustration" />
           </div>
-          <div className={`h-[60vh] w-[50vw] flex text-xl text-left ${containerBg} border ${borderColor} rounded-lg`}>
-            <div className="relative">
+          <div className={`h-auto w-11/12 md:h-[60vh] md:w-[50vw] flex text-sm md:text-xl text-left ${containerBg} border ${borderColor} rounded-lg`}>
+            <div className="relative w-full p-4 md:p-8">
               <div className="flex flex-row">
                 <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
                 <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
               </div>
-              <div className="px-4 lg:px-8 py-5">
-                <div className="flex flex-row space-x-2">
-                  <div className="h-3 w-3 rounded-full bg-red-400"></div>
-                  <div className="h-3 w-3 rounded-full bg-orange-400"></div>
-                  <div className="h-3 w-3 rounded-full bg-green-200"></div>
-                </div>
+              <div className="flex flex-row space-x-2 py-4">
+                <div className="h-3 w-3 rounded-full bg-red-400"></div>
+                <div className="h-3 w-3 rounded-full bg-orange-400"></div>
+                <div className="h-3 w-3 rounded-full bg-green-200"></div>
               </div>
-              <div className="overflow-hidden border-t-[2px] px-4 lg:px-8 py-4 lg:py-8 border-indigo-900">
+              <div className="overflow-hidden border-t-[2px] border-indigo-900 p-4 md:p-8">
                 <code className={`font-mono text-xs md:text-sm lg:text-base`}>
                   <div className="blink">
                     <span className={`mr-2 ${keywordColor}`}>const</span>

@@ -42,8 +42,8 @@ function Projects({theme}) {
   ];
 
   return (
-    <div id='project' className="">
-        <div className={` text-left pl-10 font-bold text-4xl ${theme === 'dark' ? 'text-pink-300' : 'text-purple-700'}  py-10`}>
+    <div  className="">
+        <div id='project' className={` text-left pl-10 font-bold text-4xl ${theme === 'dark' ? 'text-pink-300' : 'text-purple-700'}  py-10`}>
             My Work
         </div>
     
